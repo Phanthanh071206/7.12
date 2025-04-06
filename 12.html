@@ -1,0 +1,125 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bài 12</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    .grid-container {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(4, 1fr); /* 4 item laptop */
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: clamp(14px, 1.2vw, 18px); /* Tự động co giãn */
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer button {
+      background-color: #c77dbb;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .footer span {
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* Tablet */
+    @media (max-width: 1024px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="card">
+      <img src="https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/168276/Originals/hinh-nen-vu-tru-5.jpg" alt="ảnh">
+      <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, reiciendis inventore vel sequi eos totam animi? Vitae accusantium repellat qui Lorem, ipsum dolor Lorem ipsum dolor sit amet...</p>
+      <div class="footer">
+        <button>Live</button>
+        <span>4.2 Watching</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/168276/Originals/hinh-nen-vu-tru-5.jpg" alt="ảnh">
+      <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, reiciendis inventore vel sequi eos totam animi? Vitae accusantium repellat qui Lorem, ipsum dolor Lorem ipsum dolor sit amet...
+    </p>
+      <div class="footer">
+        <button>Live</button>
+        <span>42 Watching</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/168276/Originals/hinh-nen-vu-tru-5.jpg" alt="ảnh">
+      <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, reiciendis inventore vel sequi eos totam animi? Vitae accusantium repellat qui Lorem, ipsum dolor Lorem ipsum dolor sit amet...
+    </p>
+      <div class="footer">
+        <button>Live</button>
+        <span>42 Watching</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/168276/Originals/hinh-nen-vu-tru-5.jpg" alt="ảnh">
+      <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, officiis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, reiciendis inventore vel sequi eos totam animi? Vitae accusantium repellat qui Lorem, ipsum dolor Lorem ipsum dolor sit amet...    </p>
+      <div class="footer">
+        <button>Live</button>
+        <span>42 Watching</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
